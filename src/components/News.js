@@ -16,6 +16,9 @@ export default class News extends Component {
                     <div className='col-sm-4'>
                         <Newsitem />
                     </div>
+                    <div className='col-sm-4'>
+                        <Newsitem />
+                    </div>
                 </div>
             </>
         )
