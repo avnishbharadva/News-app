@@ -20,17 +20,17 @@ export default class Navbar extends Component {
                                     <Link className="nav-link" to="/about">About</Link>
                                 </li>
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <Link className="nav-link dropdown-toggle" to="/category" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Category
-                                    </a>
+                                    </Link>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><Link className="dropdown-item" to="/business">business</Link></li>
-                                        <li><Link className="dropdown-item" to="/entertainment">entertainment</Link></li>
-                                        <li><Link className="dropdown-item" to="/general">general</Link></li>
-                                        <li><Link className="dropdown-item" to="/health">health</Link></li>
-                                        <li><Link className="dropdown-item" to="/science">science</Link></li>
-                                        <li><Link className="dropdown-item" to="/sports">sports</Link></li>
-                                        <li><Link className="dropdown-item" to="/technology">technology</Link></li>
+                                        <li><Link className="dropdown-item" to="/business">Business</Link></li>
+                                        <li><Link className="dropdown-item" to="/entertainment">Entertainment</Link></li>
+                                        <li><Link className="dropdown-item" to="/general">General</Link></li>
+                                        <li><Link className="dropdown-item" to="/health">Health</Link></li>
+                                        <li><Link className="dropdown-item" to="/science">Science</Link></li>
+                                        <li><Link className="dropdown-item" to="/sports">Sports</Link></li>
+                                        <li><Link className="dropdown-item" to="/technology">Technology</Link></li>
                                     </ul>
                                 </li>
                             </ul>

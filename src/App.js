@@ -13,20 +13,20 @@ import {
 export default class App extends Component {
     render() {
         return (
+
             <>
-                <Navbar />
                 <BrowserRouter>
+                <Navbar />
                     <Routes>
-                        <Route path="/" element={<News category="general"/>} />
-                        {/* <Route path="/business" element={<News category="business"/>} />
-                        <Route path="/entertainment" element={<News category="entertainment"/>} />
-                        <Route path="/general" element={<News category="general"/>} />
-                        <Route path="/health" element={<News category="health"/>} />
-                        <Route path="/science" element={<News category="science"/>} />
-                        <Route path="/sports" element={<News category="sports"/>} />
-                        <Route path="/technology" element={<News category="technology"/>} /> */}
+                        <Route path="/" element={<News key="general1" category="general" pageSize="9"/>} />
+                        <Route path="/business" element={<News key="business" category="business" pageSize="9"/>} />
+                        <Route path="/entertainment" element={<News key="entertainment" category="entertainment" pageSize="9"/>} />
+                        <Route path="/general" element={<News key="general2" category="general" pageSize="9"/>} />
+                        <Route path="/health" element={<News key="health" category="health" pageSize="9"/>} />
+                        <Route path="/science" element={<News key="science" category="science" pageSize="9"/>} />
+                        <Route path="/sports" element={<News key="sports" category="sports" pageSize="9"/>} />
+                        <Route path="/technology" element={<News key="technology" category="technology" pageSize="9"/>} />
                     </Routes>
-                    {/* <News /> */}
                 </BrowserRouter>
             </>
         )
