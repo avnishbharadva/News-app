@@ -5,7 +5,7 @@ export default class Navbar extends Component {
     render() {
         return (
             <div>
-                <nav className="navbar navbar-expand-lg navbar-light bg-info">
+                <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-info">
                     <div className="container-fluid">
                         <Link className="navbar-brand" to="/">AV-News App</Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,9 +16,9 @@ export default class Navbar extends Component {
                                 <li className="nav-item">
                                     <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <Link className="nav-link" to="/about">About</Link>
-                                </li>
+                                </li> */}
                                 <li className="nav-item dropdown">
                                     <Link className="nav-link dropdown-toggle" to="/category" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Category
